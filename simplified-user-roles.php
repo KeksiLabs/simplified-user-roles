@@ -3,7 +3,7 @@
  * Plugin Name: Simplified User Roles
  * Plugin URI: https://github.com/KeksiLabs/simplified-user-roles
  * Description: Idea of this plugin is to reserve administrator roles only for developers and sys admins. Removes authors and contributors. Gives Editors capability to add new editors and subcsribers. Hides Administrators from editors.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Onni Hakala
  * Author URI: https://github.com/onnimonni
  * License: MIT License
