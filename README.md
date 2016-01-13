@@ -1,5 +1,5 @@
 # Simplified User Roles for WP 
-Simple plugin which simplfies basic roles of wordpress.
+Simple plugin which simplifies basic roles of WordPress.
 
 ## Features
 * Removes authors and contributors

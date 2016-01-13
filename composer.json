@@ -2,7 +2,7 @@
   "name": "keksilabs/simplified-user-roles",
   "type": "wordpress-muplugin",
   "license": "MIT",
-  "description": "Simple plugin which simplfies basic roles of wordpress",
+  "description": "Simple plugin which simplifies basic roles of wordpress",
   "homepage": "https://github.com/KeksiLabs/simplified-user-roles",
   "authors": [
     {
