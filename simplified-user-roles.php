@@ -36,7 +36,7 @@ class Simplified_Roles {
    * @since 1.0.0
    */
   function load_textdomain() {
-      load_plugin_textdomain( 'simplified-user-roles', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' ); 
+      $result = load_plugin_textdomain( 'simplified-user-roles', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' ); 
   }
 
   /**
@@ -80,12 +80,12 @@ class Simplified_Roles {
 
       // Rename other roles for more usability
       // Change them for your language
-      $wp_roles->roles['subscriber']['name'] = __('User');
-      $wp_roles->role_names['subscriber'] = __('User');
-      $wp_roles->roles['editor']['name'] = __('Staff');
-      $wp_roles->role_names['editor'] = __('Staff');
-      $wp_roles->roles['administrator']['name'] = __('Developer');
-      $wp_roles->role_names['administrator'] = __('Developer');           
+      $wp_roles->roles['subscriber']['name'] = __('Basic User','simplified-user-roles');
+      $wp_roles->role_names['subscriber'] = __('Basic User','simplified-user-roles');
+      $wp_roles->roles['editor']['name'] = __('Staff','simplified-user-roles');
+      $wp_roles->role_names['editor'] = __('Staff','simplified-user-roles');
+      $wp_roles->roles['administrator']['name'] = __('Developer','simplified-user-roles');
+      $wp_roles->role_names['administrator'] = __('Developer','simplified-user-roles');
   }
 
   /**

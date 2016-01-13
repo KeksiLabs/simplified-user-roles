@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Simplified User Roles\n"
-"POT-Creation-Date: 2016-01-13 16:15+0200\n"
-"PO-Revision-Date: 2016-01-13 16:15+0200\n"
+"POT-Creation-Date: 2016-01-13 16:24+0200\n"
+"PO-Revision-Date: 2016-01-13 16:25+0200\n"
 "Last-Translator: Onni Hakala <onni@koodimonni.fi>\n"
 "Language-Team: Onni Hakala <onni@koodimonni.fi>\n"
 "Language: fi\n"
@@ -19,9 +19,8 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: simplified-user-roles.php:83 simplified-user-roles.php:84
-#, fuzzy
-msgid "User"
-msgstr "Käyttäjä"
+msgid "Basic User"
+msgstr "Peruskäyttäjä"
 
 #: simplified-user-roles.php:85 simplified-user-roles.php:86
 msgid "Staff"
@@ -30,3 +29,7 @@ msgstr "﻿Henkilökunta"
 #: simplified-user-roles.php:87 simplified-user-roles.php:88
 msgid "Developer"
 msgstr "Koodaaja"
+
+#, fuzzy
+#~ msgid "User"
+#~ msgstr "Käyttäjä"
