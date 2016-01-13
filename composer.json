@@ -1,0 +1,20 @@
+{
+  "name": "keksilabs/simplified-user-roles",
+  "type": "wordpress-muplugin",
+  "license": "MIT",
+  "description": "Simple plugin which simplfies basic roles of wordpress",
+  "homepage": "https://github.com/KeksiLabs/simplified-user-roles",
+  "authors": [
+    {
+      "name": "Onni Hakala",
+      "email": "onni@koodimonni.fi",
+      "homepage": "https://github.com/onnimonni"
+    }
+  ],
+  "keywords": [
+    "wordpress","user","roles","edit","editor","capability"
+  ],
+  "require": {
+    "composer/installers": "v1.0.12"
+  }
+}
