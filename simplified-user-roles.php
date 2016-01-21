@@ -160,23 +160,25 @@ class Simplified_Roles {
   }
 
   /**
-   * Hide admins from user list
+   * Hide admins from user list in wp-admin
    *
    * @since 1.0.0
    */
   function pre_user_query($user_search) {
-    $user = wp_get_current_user();
-    if (!current_user_can('manage_options')) { // Is Not Administrator - Remove Administrator
-      global $wpdb;
+    if (is_admin()) {
+      $user = wp_get_current_user();
+      if (!current_user_can('manage_options')) { // Is Not Administrator - Remove Administrator
+        global $wpdb;
 
-      $user_search->query_where = 
-          str_replace('WHERE 1=1', 
-              "WHERE 1=1 AND {$wpdb->users}.ID IN (
-                   SELECT {$wpdb->usermeta}.user_id FROM $wpdb->usermeta 
-                      WHERE {$wpdb->usermeta}.meta_key = '{$wpdb->prefix}capabilities'
-                      AND {$wpdb->usermeta}.meta_value NOT LIKE '%administrator%')", 
-              $user_search->query_where
-          );
+        $user_search->query_where = 
+            str_replace('WHERE 1=1', 
+                "WHERE 1=1 AND {$wpdb->users}.ID IN (
+                     SELECT {$wpdb->usermeta}.user_id FROM $wpdb->usermeta 
+                        WHERE {$wpdb->usermeta}.meta_key = '{$wpdb->prefix}capabilities'
+                        AND {$wpdb->usermeta}.meta_value NOT LIKE '%administrator%')", 
+                $user_search->query_where
+            );
+      }
     }
   }
 
